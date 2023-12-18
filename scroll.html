@@ -1,0 +1,173 @@
+<div>
+    <head>
+        <title>
+            SVG Scroll bar
+        </title>
+        <link rel="stylesheet" href="scroll.css">
+        
+    </head>
+    <div>
+        <div class="container">
+            <div id='circle'>
+               
+              <div class='stripe str1'>
+                  <div class='first'>
+                      <div class='smcircle'></div>
+                  </div>
+                  <div class='second'>25 M+ Downloads</div>
+              </div>
+              <div class='stripe str2'>
+                  <div class='first'>
+                  <div class='smcircle'></div>
+                  </div>
+                  <div class='second'>Blockchain Revolution</div>
+              </div>
+              <div class='stripe str3'>
+                  <div class='first'>
+                  <div class='smcircle'></div>
+                  </div>
+                  <div class='second'>UX Strategy</div>
+              </div>
+              <div class='stripe str4'>
+                  <div class='first'>
+                  <div class='smcircle'></div>
+                  </div>
+                  <div class='second'>Text Headline</div>
+              </div>
+              <div class='stripe str5'>
+                  <div class='first'>
+                  <div class='smcircle'></div>
+                  </div>
+                  <div class='second'>East Asia Country</div>
+              </div>
+            </div>
+            <div class="subcontainer" id="wrapper">
+                
+                <div class="text" id="mydiv1" style="color: white;">
+                    UX Strategy
+                </div>
+                <div class="text2" id="mydiv2" style="color: white;">
+                    ABC 456
+                </div>
+                <div class="photo" >
+                    <div class="pic-container" style="display: flex;"><img src="" alt="" style="height: 100%; width: 100%;position: relative; display: none;" id="bigpic">
+                        <img src="3.png" alt="" style="height: 80%; width: 50%;position: relative; top: 100px; z-index: 10; " id="picture1">
+                        <img src="3.2.png" alt="" id="picture2" style="height: 80%; width: 50%;position: relative; top: 100px;"></div>
+                    
+                    
+
+                </div>
+                <div class="pannel">
+                    <div class="mncircle" id="change1"></div>
+                    <div class="mncircle" id="change2"></div>
+                    <div class="mncircle" id="change3"></div>
+                    <div class="mncircle" id="change4"></div>
+                    <div class="mncircle" id="change5"></div>
+                </div>
+            </div>
+          </div>
+         
+        </div>
+        
+    </div>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scroll.js"></script>
+    <script>
+        const changeButton1 = document.getElementById('change1');
+        const div1 = document.getElementById('mydiv1');
+        const div2 = document.getElementById('mydiv2');
+        const c1=document.getElementById('circle');
+        
+        changeButton1.addEventListener('click', () => {
+          div1.innerHTML = '25 M+ Downloads';
+          div1.style.backgroundColor = '';
+          div1.style.color = 'white';
+          div2.innerHTML='ABC 123'
+          div2.style.backgroundColor = '';
+          div2.style.color = 'white'; 
+          c1.style.backgroundColor='rgb(115, 30, 212)';
+          document.getElementById("picture1").src ='1.png';
+          document.getElementById("picture2").src ='1.1.png';
+          document.getElementById("bigpic").style.display='none';
+          document.getElementById("wrapper").style.backgroundColor='rgb(222, 221, 220)';
+          
+        });
+
+        const changeButton2 = document.getElementById('change2');
+        const div3 = document.getElementById('mydiv1');
+        const div4 = document.getElementById('mydiv2');
+        const c2=document.getElementById('circle');
+        changeButton2.addEventListener('click', () => {
+          div3.innerHTML = 'Blockchain Revolution';
+          div3.style.backgroundColor = '';
+          div3.style.color = 'white';
+          div4.innerHTML='ABC 234'
+          div4.style.backgroundColor = '';
+          div4.style.color = 'white';
+          c2.style.backgroundColor='rgb(86, 0, 237)';
+          document.getElementById("picture1").src ='2.1.png';
+          document.getElementById("picture2").src ='4.png';
+          document.getElementById("bigpic").style.display='none';
+          document.getElementById("wrapper").style.backgroundColor='rgb(41, 34, 97)';
+        });
+
+        const changeButton3 = document.getElementById('change3');
+        const div5 = document.getElementById('mydiv1');
+        const div6 = document.getElementById('mydiv2');
+        const c3=document.getElementById('circle');
+        changeButton3.addEventListener('click', () => {
+          div5.innerHTML = 'UX Strategy';
+          div5.style.backgroundColor = '';
+          div5.style.color = 'white';
+          div6.innerHTML='ABC 456'
+          div6.style.backgroundColor = '';
+          div6.style.color = 'white';
+          c3.style.backgroundColor='rgb(19, 11, 43)';
+          document.getElementById("picture1").src ='3.png';
+          document.getElementById("picture2").src ='3.2.png';
+          document.getElementById("bigpic").style.display='none';
+          document.getElementById("wrapper").style.backgroundColor='rgb(25, 25, 105)';
+
+        });
+
+        const changeButton4 = document.getElementById('change4');
+        const div7 = document.getElementById('mydiv1');
+        const div8 = document.getElementById('mydiv2');
+        const c4=document.getElementById('circle');
+        changeButton4.addEventListener('click', () => {
+          div7.innerHTML = 'Text Headline';
+          div7.style.backgroundColor = '';
+          div7.style.color = 'white';
+          div8.innerHTML='ABC 678'
+          div8.style.backgroundColor = '';
+          div8.style.color = 'white';
+          c4.style.backgroundColor='rgb(25, 25, 105)';
+          document.getElementById("bigpic").src ='text.png';
+          document.getElementById("bigpic").style.display='block';
+          document.getElementById("picture1").src ='';
+          document.getElementById("picture2").src ='';
+          document.getElementById("wrapper").style.backgroundColor='rgb(222, 221, 220)';
+        });
+
+        const changeButton5 = document.getElementById('change5');
+        const div9 = document.getElementById('mydiv1');
+        const div10 = document.getElementById('mydiv2');
+        const c5=document.getElementById('circle');
+        changeButton5.addEventListener('click', () => {
+          div9.innerHTML = 'East Asia Country';
+          div9.style.backgroundColor = '';
+          div9.style.color = 'white';
+          div10.innerHTML='ABC 23478'
+          div10.style.backgroundColor = '';
+          div10.style.color = 'white';
+          c5.style.backgroundColor='rgb(46, 145, 84)';
+          document.getElementById("bigpic").style.display='none';
+          document.getElementById("picture1").src ='5.1.png';
+          document.getElementById("picture2").src ='5.2.png';
+          document.getElementById("wrapper").style.backgroundColor='rgb(31, 167, 40)';
+        });
+
+
+    </script>
+</html>

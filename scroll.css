@@ -1,0 +1,158 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+.container
+{
+    display: flex;
+    
+}
+#circle
+{
+    height: 90vw;
+    width: 90vw;
+    position: absolute;
+    left:-100vh;
+    top: 50%;
+    border-radius: 50%;
+    background-color: rgb(19, 11, 43);
+    transform: translate(0,-50%) rotate(100deg);
+    
+}
+.subcontainer .text
+{
+    height: 150px;
+    width: 300px;
+    /* background-color: rgb(255, 255, 255); */
+    position: relative;
+    top: 280px;
+    left: -500px;
+    font-size: 4vw;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 1s;
+}
+
+
+.subcontainer .text2
+{
+    transition: 1s;
+    height: 100px;
+    width: 300px;
+    /* background-color: red; */
+    position: relative;
+    top: 350px;
+    left: -600px;
+    font-size: 3vw;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.subcontainer .photo
+{
+    position: relative;
+    height: 550px;
+    width: 80%;
+    /* background-color: green; */
+    z-index: 10;
+    top: -200px;
+    left: 40px;
+}
+#circle .stripe
+{
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    transform: translate(0,-50%);
+    height: 60px;
+    transform-origin: 0% 50%;
+    /* background-color: greenyellow; */
+}
+#circle .str1
+{
+    transform: translate(0,-50%) rotate(-20deg);
+}
+#circle .str2
+{
+    transform: translate(0,-50%) rotate(-10deg);
+}
+#circle .str4
+{
+    transform: translate(0,-50%) rotate(10deg);
+}
+#circle .str5
+{
+    transform: translate(0,-50%) rotate(20deg);
+}
+#circle .stripe .first
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(31, 6, 105); */
+}
+
+#circle .stripe .second
+{
+    height: 100%;
+    width: 20%;
+    /* background-color:rgb(115, 30, 212); */
+    position: relative;
+    left: 10px;
+    font-size: 2vw;
+    opacity:0.2;
+}
+#circle .stripe .first .smcircle
+{
+    position: absolute;
+    top: 50%;
+    right: -0.7vw;
+    
+    height: 1vw;
+    width: 1vw;
+    border-radius: 50%;
+    background-color:gray;
+    opacity: 0.3;
+    transform: translate(0,-50%);
+   
+}
+.container .subcontainer
+{
+    position: relative;
+    /* top: 100px; */
+    height: 650px;
+    width: 50%;
+    background-color: rgb(16, 16, 81);
+    /* border: 2px solid black; */
+    left: 50%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    /* right: 0%; */
+    transition: 1s;
+}
+.container .subcontainer .pannel
+{
+    position: absolute;
+    width: 10%;
+    height: 30%;
+    /* background-color: rgb(31, 167, 40); */
+    right: 5%;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.container .subcontainer .pannel .mncircle
+{
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(121, 120, 120);
+    opacity: 0.2;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
